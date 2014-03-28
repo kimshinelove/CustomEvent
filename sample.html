@@ -20,7 +20,9 @@
     });
 
     welEnterInput.addCommonEventListener("enter", function(event) {
-        console.log(event.detail.data);
+        var inputText = event.detail.data;
+        console.log('key presse enter - input value : ' + inputText);
+        alert('key presse enter - input value : ' + inputText);
     });
 
     welEnterInput.addCommonEventListener("esc", function(event) {
